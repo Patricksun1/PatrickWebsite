@@ -11,25 +11,29 @@
 </head>
  
 <body>
-<section id="about-me">
-    <nav>
-        <div class="name"><h1>Patrick Sun Quiz</h1></div>
-        <a href="/login.html">Login</a>
-        <hr>
-    </nav>
+    <header class="header">
+        <a href="#" class="logo">Patrick Sun</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+            <a href="/login.html">Login</a>
+        </nav>
+    </header>
 
-<p>
+<div class="questions">
     First Question
     <p>
         <img src="colour wheel.png" alt="colour wheel">
         <br>
         <b>What is my favourite colour?</b>
         <br>
-        <input id = "red" type="radio" name ="fav_colour"><label for = "red">Red</label>
+        <input id = "red" type="radio" name ="fav_colour"><label for = "red"> Red</label>
         <br>
-        <input id = "blue" type="radio" name ="fav_colour"><label for = "blue">Blue</label>
+        <input id = "blue" type="radio" name ="fav_colour"><label for = "blue"> Blue</label>
         <br>
-        <input id = "green" type="radio" name ="fav_colour"><label for = "green">Green</label>
+        <input id = "green" type="radio" name ="fav_colour"><label for = "green"> Green</label>
     </p>
     </p>
 
@@ -39,11 +43,14 @@
     <p>
         <b>Which of these foods do I like?</b>
         <br>
-        <input type="checkbox" name = "fav_foods"> fried chicken
+
+
+        <input id = "fried_chicken" type="checkbox" name = "fav_foods"> <label for="fried_chicken">fried chicken</label> 
         <br>
-        <input type="checkbox" name = "fav_foods"> pizza
+        <input id = "pizza" type="checkbox" name = "fav_foods"> <label for="pizza">pizza</label>
         <br>
-        <input type="checkbox" name = "fav_foods"> sushi 
+        <input id = "sushi" type = "checkbox" name = "fav_foods"> <label for="sushi">sushi</label>
+         
     </p>
 </p>
 
@@ -52,13 +59,18 @@
     <p>
         <b>Dogs or Cats?</b>
         <br>
-        <input type="radio" name="dogcat"> Dogs
+        <label for="dogs"><input id = "dogs" type="radio" name="dogcat"> Dogs</label>
+        
         <br>
-        <input type="radio" name="dogcat"> Cats 
+        <label for="cats"><input id = "cats" type="radio" name="dogcat"> Cats</label>
     </p>
 </p>
-
-</section>
+<br>
 <button>Submit?</button> 
+</div>
+    
+
+
+
 </body>
 </html>
