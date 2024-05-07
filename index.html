@@ -5,21 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrick Website</title>
-</head>
-<body>
-    <h1>Patrick Sun</h1>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="app.js"></script>
 
-    <h2>What do I like?</h2>
+</head>
+ 
+<body>
+<section id="about-me">
+    <nav>
+        <div class="name"><h1>Patrick Sun Quiz</h1></div>
+        <a href="/login.html">Login</a>
+        <hr>
+    </nav>
+
+<p>
+    First Question
     <p>
-        <div>
-        <a href = "https://google.com" target = "_blank">Google</a>
+        <img src="colour wheel.png" alt="colour wheel">
         <br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, vero ipsam quo tenetur at velit optio nobis vel molestias, voluptas beatae? Cumque, cum rerum reiciendis tenetur quo totam unde labore?
-        </div>   
+        <b>What is my favourite colour?</b>
+        <br>
+        <input id = "red" type="radio" name ="fav_colour"><label for = "red">Red</label>
+        <br>
+        <input id = "blue" type="radio" name ="fav_colour"><label for = "blue">Blue</label>
+        <br>
+        <input id = "green" type="radio" name ="fav_colour"><label for = "green">Green</label>
     </p>
-    <p>bal</p>
+    </p>
+
     
-    <p>bal</p>
-    
+<p>
+    Second Question
+    <p>
+        <b>Which of these foods do I like?</b>
+        <br>
+        <input type="checkbox" name = "fav_foods"> fried chicken
+        <br>
+        <input type="checkbox" name = "fav_foods"> pizza
+        <br>
+        <input type="checkbox" name = "fav_foods"> sushi 
+    </p>
+</p>
+
+<p>
+    Final Question
+    <p>
+        <b>Dogs or Cats?</b>
+        <br>
+        <input type="radio" name="dogcat"> Dogs
+        <br>
+        <input type="radio" name="dogcat"> Cats 
+    </p>
+</p>
+
+</section>
+<button>Submit?</button> 
 </body>
 </html>
