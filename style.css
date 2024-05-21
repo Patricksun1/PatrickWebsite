@@ -139,13 +139,13 @@ h1 {
 }
 
 
-#about-me {
+#home {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.about-me__info-container {
+.home__info-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -154,7 +154,7 @@ h1 {
     margin: 0 auto;
     text-align: center;
 }
-.about-me_picture-mask {
+.home_picture-mask {
      width: 200px;
      height: 200px;
      border-radius: 50%;
@@ -163,15 +163,35 @@ h1 {
      margin-bottom: 20px;
 }
 
-.about-me_picture {
+.home_picture {
     width: 100%;
     transform: scale(1.1);
 
 }
-.about-me_info-title {
+.home_info-title {
     margin-bottom: 10px;
 }
-.about-me__para {
+.home__para {
     font-size:18px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.home_links a{
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    color: #6030b1;
+    border: 0.2rem solid;
+    border-radius: 50%;
+}
+
+
+.home_links a:hover {
+    color: white;
+    transition: 300ms ease-in-out;
+    transform: scale(1.1);
 }
