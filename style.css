@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
+h1 {
+    font-size: 36px;
+}
 h1, h2, h3, span {
     color: black;
     text-align: center;
@@ -45,8 +47,8 @@ body {
     color: #6030b1;
 }
 
-h1 {
-    font-size: 36px;
+section:nth-child(even) {
+    background-color: rgba(140, 188, 255, 0.5)
 }
 
 .navbar {
@@ -194,4 +196,113 @@ h1 {
     color: white;
     transition: 300ms ease-in-out;
     transform: scale(1.1);
+}
+
+.about-me_title {
+    max-width: 175px;
+    margin-bottom: 20px;
+    border: 0.2rem white;
+
+}
+.about-me_title:hover {
+    background-color: 60;
+    transition: 300ms ease-in-out;
+    
+}
+.about-me_container {
+    padding: 50px 0;
+
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: skyblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: skyblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: skyblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.para {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+
+}
+.title1 {
+    margin-bottom: 10px;
+}
+
+
+.language_img {
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms ease;
+}
+.language {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language:hover .language_img {
+    filter: brightness(0.8);
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+
+.language_img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+
+}
+
+.language_name {
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+}
+.language_list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.language:hover .language_name {
+    transform: scale(1);
 }
