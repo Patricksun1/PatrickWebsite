@@ -11,64 +11,53 @@
 </head>
  
 <body>
-    <header class="header">
-        <a href="#" class="logo">Patrick Sun</a>
+    <section id ="about-me">
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
-            <a href="/login.html">Login</a>
+            <a href = "#" id= "personal__logo">Patrick<span> Sun</span></a>
+            <ul class = "navbar_links">
+                <li>
+                    <a href="#" class = 
+                    "link__hover-effect--blue">
+                        About Me</a>
+                </li>
+                <li>
+                    <a href="#" class = 
+                    "link__hover-effect--green">
+                        Gallery</a>
+                </li>
+                <li>
+                    <a href="#" class = 
+                    "link__hover-effect--purple">
+                        Contact</a>
+                </li>
+            </ul>
+
         </nav>
-    </header>
-
-<div class="questions">
-    First Question
-    <p>
-        <img src="colour wheel.png" alt="colour wheel">
-        <br>
-        <b>What is my favourite colour?</b>
-        <br>
-        <input id = "red" type="radio" name ="fav_colour"><label for = "red"> Red</label>
-        <br>
-        <input id = "blue" type="radio" name ="fav_colour"><label for = "blue"> Blue</label>
-        <br>
-        <input id = "green" type="radio" name ="fav_colour"><label for = "green"> Green</label>
-    </p>
-    </p>
-
-    
-<p>
-    Second Question
-    <p>
-        <b>Which of these foods do I like?</b>
-        <br>
-
-
-        <input id = "fried_chicken" type="checkbox" name = "fav_foods"> <label for="fried_chicken">fried chicken</label> 
-        <br>
-        <input id = "pizza" type="checkbox" name = "fav_foods"> <label for="pizza">pizza</label>
-        <br>
-        <input id = "sushi" type = "checkbox" name = "fav_foods"> <label for="sushi">sushi</label>
          
-    </p>
-</p>
+        <div class = "flex flex-1">
+            <div class="about-me__info row">
+                <div class="about-me__info-container">
+                    <figure class = "about-me_picture-mask ">
+                        <img src="Profile-Picture.jpeg" class = "about-me_picture"  alt="Picture of Me!">
+                    </figure>
+                    <h1 class = "about-me_info-title"> 
+                      Hey! I'm <span class = "name-purple">Patrick Sun</span> 👋
+                    </h1>
+                    <p class = "about-me__para">
+                        I'm a <strong>First Year</strong> Engineering/Computer Science Student @ UNSW! I hope to make the most
+                        out of my uni experience and meet lots of new people :)
+                    </p>
+                </div>
+            </div>
+        </div>
 
-<p>
-    Final Question
-    <p>
-        <b>Dogs or Cats?</b>
-        <br>
-        <label for="dogs"><input id = "dogs" type="radio" name="dogcat"> Dogs</label>
-        
-        <br>
-        <label for="cats"><input id = "cats" type="radio" name="dogcat"> Cats</label>
-    </p>
-</p>
-<br>
-<button>Submit?</button> 
-</div>
-    
+    </section>
+
+    <section>
+
+    </section>
+
+
 
 
 
