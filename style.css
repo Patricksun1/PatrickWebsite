@@ -28,8 +28,13 @@ li {
 
 a {
     text-decoration: none;
+    position: relative;
+    transition: opacity 300ms ease;
 }
 
+i:hover {
+    opacity: 0.7;
+}
 body {
     min-height: 100vh;
     background: url('background.jpeg') no-repeat;
@@ -167,6 +172,20 @@ section:nth-child(even) {
      overflow: hidden;
      box-shadow: 0 8px 16px rgba(0,0,0);
      margin-bottom: 20px;
+     animation: animate-profile-picture 800ms 200ms backwards;
+}
+
+@keyframes animate-profile-picture {
+
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .home_picture {
@@ -176,11 +195,16 @@ section:nth-child(even) {
 }
 .home_info-title {
     margin-bottom: 10px;
+    animation: fade-up 650ms 400ms backwards;
 }
 .home__para {
     font-size:18px;
     margin-bottom: 30px;
+    animation: fade-up 650ms 600ms backwards;
 }
+
+
+
 
 .home_links a{
     display: inline-flex;
@@ -192,6 +216,7 @@ section:nth-child(even) {
     color: #6030b1;
     border: 0.2rem solid;
     border-radius: 50%;
+    animation: fade-up 650ms 800ms backwards;
 }
 
 
@@ -200,6 +225,33 @@ section:nth-child(even) {
     transition: 300ms ease-in-out;
     transform: scale(1.1);
 }
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
+}
+.wave {
+    display: inline-block;
+    animation: animate-wave 500ms infinite ease;
+}
+
 
 .about-me_title {
     max-width: 175px;
@@ -426,6 +478,10 @@ footer {
 .footer_social-link {
     color: white;
     font: bold;
+    transition: opacity 300ms ease;
+}
+.footer_social-link:hover {
+    opacity: 0.7;
 }
 .footer_social_list {
     display: flex;
@@ -433,9 +489,9 @@ footer {
     justify-content: space-around;
     width: 100%;
     margin-bottom: 28px;
-  
     
 }
+
 
 
 .footer_logo-popper {
@@ -451,6 +507,9 @@ footer {
 .footer_anchor {
     margin-bottom: 20px;
     position: relative; 
+}
+.footer_anchor:hover {
+    opacity: 0.7;
 }
 
 .footer_anchor:hover .footer_logo-popper{
